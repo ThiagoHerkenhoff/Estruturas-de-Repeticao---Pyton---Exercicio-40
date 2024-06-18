@@ -1,0 +1,17 @@
+# 40 - Elabore um programa que faça leitura de vários números inteiros, até que se digite um número negativo.
+# O programa tem que retornar o maior e o menor número lido.
+
+maior = 0
+menor = 0
+
+while True:
+    n = int(input('Informe um número inteiro positivo, ou um número negativo para parar o programa: '))
+
+    if n < 0:
+        break
+
+    if n > maior:
+        maior = n
+
+    if n < menor:
+        menor = n
